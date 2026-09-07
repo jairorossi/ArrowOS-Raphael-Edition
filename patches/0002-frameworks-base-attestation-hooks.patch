@@ -1,0 +1,15 @@
+diff --git a/core/java/com/android/internal/gmscompat/AttestationHooks.java b/core/java/com/android/internal/gmscompat/AttestationHooks.java
+index e5beee42..73e8a757 100644
+--- a/core/java/com/android/internal/gmscompat/AttestationHooks.java
++++ b/core/java/com/android/internal/gmscompat/AttestationHooks.java
+@@ -125,8 +125,8 @@ public final class AttestationHooks {
+     }
+ 
+     public static void onEngineGetCertificateChain() {
+-        // Check stack for SafetyNet
+-        if (sIsGms && isCallerSafetyNet()) {
++        // Force software attestation for all GMS integrity checks
++        if (sIsGms) {
+             throw new UnsupportedOperationException();
+         }
+     }
