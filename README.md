@@ -16,10 +16,10 @@ Custom ROM não-oficial de alta performance, fluidez e estabilidade baseada no *
 | **Versão da ROM** | ArrowOS 12.1 (Android 12.1 / 12L) |
 | **Variante** | **GAPPS** (MindTheGapps Oficial Integrado de fábrica) |
 | **Nome do Arquivo** | `Arrow-v12.1-raphael-UNOFFICIAL-20260907-GAPPS.zip` |
-| **Tamanho** | `1.5 GB` (1.498.409.036 bytes) |
-| **SHA-256** | `a54ece58511833234217d7f1e7515a6412f0b94b5fb8cd1f931192297609dc99` |
+| **Tamanho** | `1.5 GB` (1.578.409.832 bytes) |
+| **SHA-256** | `c7e915d5904b6903b0148878461b6a36ff8046d0d649c77f2e8bf216893edd47` |
 | **Data da Build** | 07 de Setembro de 2026 |
-| 🚀 **Download Direto (Gofile)** | **[👉 Baixar ArrowOS 12.1 GAPPS (Gofile)](https://gofile.io/d/MtP4YjER)** |
+| 🚀 **Download Direto (Gofile)** | **[👉 Baixar ArrowOS 12.1 GAPPS (Gofile)](https://gofile.io/d/Ymkjupoa)** |
 
 ---
 
