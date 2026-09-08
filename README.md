@@ -13,15 +13,15 @@ Custom ROM não-oficial de alta estabilidade, bateria impecável e desempenho ba
 
 | Arquivo | Descrição | Link de Download |
 | :--- | :--- | :--- |
-| 🏹 **ROM ArrowOS 12.1 GAPPS** | Build completa oficial com GApps, Kernel 4.14 e Play Integrity | **[Baixar no Gofile (1.28 GB)](https://gofile.io/d/60czzG1p)** |
+| 🏹 **ROM ArrowOS 12.1 GAPPS** | Build completa oficial com GApps, Kernel 4.14 e Play Integrity | **[Baixar no Gofile (1.28 GB)](https://gofile.io/d/Hjqco7BN)** |
 | 🦊 **OrangeFox Recovery R11.3** | Recovery Oficial Unified com suporte a Dynamic Partitions | [Baixar no Gofile](https://gofile.io/d/ViAUVw29) |
 | 🔄 **Script Retrofit Dynamic** | Conversor de partições 1-click para compatibilidade total | [Baixar no Gofile](https://gofile.io/d/xHIgmhrp) |
 | 📶 **Firmware MIUI 12.5.2** | Firmware Oficial MIUI Global Android 11 para Raphael | [Baixar no Gofile](https://gofile.io/d/iMakeCes) |
 
 ### 🔐 Integridade do Arquivo da ROM:
 - **Nome:** `Arrow-v12.1-raphael-UNOFFICIAL-20260908-GAPPS.zip`
-- **Tamanho:** `1.337.905.592 bytes` (~1.28 GB)
-- **SHA-256:** `1bea4058e3a8a5b3ed4523ce7d0c445b2dbccf98d9a9a37bf56398ab2d040917`
+- **Tamanho:** `1.342.842.750 bytes` (~1.28 GB)
+- **SHA-256:** `ac78321938233ca0ce4d25f06cb00ac97aae6a5529441077ef4520c9394ef1ab`
 
 ---
 
