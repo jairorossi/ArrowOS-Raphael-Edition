@@ -5,103 +5,68 @@
 [![Build Status](https://img.shields.io/badge/Build-Passed-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)](https://github.com/jairorossi/ArrowOS-Raphael-Edition)
 [![Play Integrity](https://img.shields.io/badge/Play%20Integrity-MEETS_DEVICE_INTEGRITY%20%2F%20STRONG-blue?style=for-the-badge&logo=googleplay&logoColor=white)](https://github.com/jairorossi/ArrowOS-Raphael-Edition)
 
-Custom ROM não-oficial de alta performance, fluidez e estabilidade baseada no **ArrowOS 12.1 (Android 12L)** para o **Xiaomi Mi 9T Pro / Redmi K20 Pro (`raphael` / `raphaelin`)**, com **GApps integrados**, **Play Integrity aprovado nativamente** e **particionamento padrão tradicional (Direct Non-Dynamic)** para 100% de compatibilidade com qualquer Custom Recovery (TWRP / OrangeFox).
+Custom ROM não-oficial de alta estabilidade, bateria impecável e desempenho baseada no **ArrowOS 12.1 (Android 12L)** para o **Xiaomi Mi 9T Pro / Redmi K20 Pro (`raphael` / `raphaelin`)**, com **GApps integrados**, **Play Integrity aprovado nativamente** e arquitetura oficial de **Partições Dinâmicas Retrofit (6.0 GB Super Pool)**.
 
 ---
 
-## 📦 Informações da Build e Download
+## 📦 Downloads e Detalhes da Versão
 
-| Item | Detalhe |
-| :--- | :--- |
-| **Versão da ROM** | ArrowOS 12.1 (Android 12.1 / 12L) |
-| **Variante** | **GAPPS** (MindTheGapps Oficial Integrado de fábrica) |
-| **Nome do Arquivo** | `Arrow-v12.1-raphael-UNOFFICIAL-20260907-GAPPS.zip` |
-| **Tamanho** | `1.5 GB` (1.578.409.832 bytes) |
-| **SHA-256** | `c7e915d5904b6903b0148878461b6a36ff8046d0d649c77f2e8bf216893edd47` |
-| **Data da Build** | 07 de Setembro de 2026 |
-| 🚀 **Download Direto (Gofile)** | **[👉 Baixar ArrowOS 12.1 GAPPS (Gofile)](https://gofile.io/d/Ymkjupoa)** |
+| Arquivo | Descrição | Link de Download |
+| :--- | :--- | :--- |
+| 🏹 **ROM ArrowOS 12.1 GAPPS** | Build completa oficial com GApps, Kernel 4.14 e Play Integrity | **[Baixar no Gofile (1.28 GB)](https://gofile.io/d/60czzG1p)** |
+| 🦊 **OrangeFox Recovery R11.3** | Recovery Oficial Unified com suporte a Dynamic Partitions | [Baixar no Gofile](https://gofile.io/d/ViAUVw29) |
+| 🔄 **Script Retrofit Dynamic** | Conversor de partições 1-click para compatibilidade total | [Baixar no Gofile](https://gofile.io/d/xHIgmhrp) |
+| 📶 **Firmware MIUI 12.5.2** | Firmware Oficial MIUI Global Android 11 para Raphael | [Baixar no Gofile](https://gofile.io/d/iMakeCes) |
+
+### 🔐 Integridade do Arquivo da ROM:
+- **Nome:** `Arrow-v12.1-raphael-UNOFFICIAL-20260908-GAPPS.zip`
+- **Tamanho:** `1.337.905.592 bytes` (~1.28 GB)
+- **SHA-256:** `1bea4058e3a8a5b3ed4523ce7d0c445b2dbccf98d9a9a37bf56398ab2d040917`
 
 ---
 
-## ✨ Recursos, Correções e Otimizações
+## ✨ Principais Destaques Desta Edição
 
-1. 🧱 **Particionamento Tradicional Não-Dinâmico (Non-Dynamic Layout):**
-   - Imagens `/system` (3.6GB) e `/vendor` (1.6GB) gravadas diretamente em partições físicas dedicadas.
-   - **Zero erros de recovery:** Elimina de vez o erro `dynamic_partitions_op_list` / `update_dynamic_partitions` ao instalar via TWRP ou OrangeFox padrão.
-2. 🛡️ **Play Integrity & Bancos 100% Aprovados:**
-   - Patch nativo em `AttestationHooks.java` no framework core para garantir aprovação automática no Google Play Protect, Google Pay, Nubank, Itaú, Bradesco, Inter, Mercado Pago, etc.
-3. 🔐 **SELinux Enforcing & SEPolicy Legacy VNDR:**
-   - Políticas de segurança configuradas com `sepolicy_vndr-legacy-um` para estabilidade perfeita de todos os serviços de hardware.
-   - Domínios e permissões de HAL (`hal_bootctl`, vibrador, biometria, sensores, câmera) 100% integrados.
-4. 📸 **Câmera Pop-Up & Motor Xiaomi:**
+1. 🚀 **Kernel Oficial Qualcomm SM8150 (4.14):**
+   - Árvore de kernel completa (`raphael_defconfig`) compilada com Clang 12 e `LLVM_IAS=1`.
+   - Kernel compactado em `Image.gz` (16 MB) e DTBs completos de 1.8 MB com todos os drivers do Raphael.
+2. 🛡️ **Play Integrity / Banking Fix Nativo:**
+   - Patch `AttestationHooks.java` no framework base para aprovação em apps bancários (Google Pay, Nubank, Itaú, Bradesco, Inter, Mercado Pago).
+3. 📸 **Câmera Pop-Up & Motor Xiaomi:**
    - Suporte completo ao motor retrátil da câmera frontal (`vendor.xiaomi.hardware.motor`), incluindo LEDs de acionamento e efeitos sonoros customizáveis.
-5. 🟢 **Leitor Biométrico Sob a Tela (FOD Goodix):**
-   - Implementação otimizada de biometria óptica sob o display com resposta ultrarrápida.
-6. 🔋 **PowerHAL AIDL & Bateria:**
-   - Gerenciamento dinâmico inteligente de frequências para o Snapdragon 855 via `power-libperfmgr` com perfis dedicados de eficiência energética e jogos.
+4. 🟢 **Leitor Biométrico Sob a Tela (FOD Goodix):**
+   - Resposta instantânea e precisa no leitor óptico sob a tela.
+5. 🔋 **PowerHAL AIDL & VINTF Compliance:**
+   - Compatibilidade total com a especificação VINTF do Android 12L para gerenciamento dinâmico de performance e economia de energia.
 
 ---
 
-## 📲 Guia Completo de Instalação (Clean Flash)
+## 📲 Guia Completo de Instalação (OrangeFox / TWRP)
 
-### Requisitos:
-- Bootloader desbloqueado.
-- Custom Recovery instalado: [OrangeFox Recovery](https://orangefox.download) ou [TWRP Oficial](https://twrp.me/xiaomi/xiaomimi9tpro.html).
-- Firmware base: **MIUI V12.5.2.0.RFKMIXM Global** (Android 11).
+### Passo 1: Preparar o Recovery e Partições
+1. Reinicie no **OrangeFox Recovery** (ou TWRP).
+2. Se estiver vindo de uma ROM antiga sem partições dinâmicas, vá em **Install** e instale o [Script Retrofit Dynamic](https://gofile.io/d/xHIgmhrp).
+3. Vá em **Wipe > Advanced Wipe** e selecione:
+   - `Dalvik / ART Cache`, `Cache`, `Data`, `Metadata`.
+4. Arraste para confirmar a limpeza.
+5. Vá no menu principal > **Reboot > Recovery** (⚠️ **Importante reiniciar o Recovery antes de continuar!**).
 
-### Passo a Passo:
-1. Reinicie no modo Recovery (**Segure `Power` + `Volume +`**).
-2. Vá em **Wipe / Limpar** ➔ **Advanced Wipe**:
-   - Marque: `Dalvik / ART Cache`, `Cache`, `System`, `Vendor` e `Data`.
-   - Arraste para confirmar a limpeza.
-3. Conecte o cabo USB ao PC ou use Pen Drive OTG e copie o arquivo da ROM:
-   - `Arrow-v12.1-raphael-UNOFFICIAL-20260907-GAPPS.zip`
-4. Vá em **Install / Instalar**, selecione o arquivo da ROM e deslize para instalar.
-5. *(Obrigatório após o término da instalação)*:
-   - Vá em **Wipe** ➔ **Format Data** ➔ digite `yes` e confirme.
-6. Toque em **Reboot System** (Reiniciar Sistema).
-7. Pronto! A primeira inicialização pode levar de 2 a 5 minutos.
+### Passo 2: Instalar Firmware e ROM
+1. Ao reiniciar o Recovery, vá em **Install**.
+2. Instale o [Firmware MIUI 12.5.2 Global](https://gofile.io/d/iMakeCes) (se ainda não estiver instalado).
+3. Instale o arquivo da **ROM ArrowOS 12.1 GAPPS**:
+   - `Arrow-v12.1-raphael-UNOFFICIAL-20260908-GAPPS.zip`.
 
----
-
-## 🛠️ Como Compilar a Partir do Código-Fonte (Build Instructions)
-
-```bash
-# 1. Instalar as dependências necessárias no Ubuntu/Debian
-sudo apt update && sudo apt install -y bc bison build-essential ccache curl flex g++-multilib     gcc-multilib git git-lfs gnupg gperf imagemagick lib32readline-dev lib32z1-dev libelf-dev     liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libxml2 libxml2-utils     lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev python3 openjdk-11-jdk
-
-# 2. Instalar a ferramenta repo
-mkdir -p ~/.bin && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
-chmod a+x ~/.bin/repo && export PATH=~/.bin:$PATH
-
-# 3. Inicializar a árvore base do ArrowOS 12.1
-mkdir -p /mnt/arrow && cd /mnt/arrow
-repo init -u https://github.com/ArrowOS/android_manifest.git -b arrow-12.1 --depth=1
-
-# 4. Clonar o manifesto e patches desta edição
-git clone https://github.com/jairorossi/ArrowOS-Raphael-Edition.git .repo/local_manifests
-
-# 5. Sincronizar todos os repositórios
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j$(nproc --all)
-
-# 6. Aplicar patches no código-fonte
-git -C vendor/qcom/opensource/vibrator apply .repo/local_manifests/patches/0001-vibrator-include-fcntl.patch 2>/dev/null || true
-git -C frameworks/base apply .repo/local_manifests/patches/0002-frameworks-base-attestation-hooks.patch 2>/dev/null || true
-git -C system/sepolicy apply .repo/local_manifests/patches/0003-system-sepolicy-hal-wifi.patch 2>/dev/null || true
-
-# 7. Configurar o ambiente e compilar com GApps integrados
-source build/envsetup.sh
-export ARROW_GAPPS=true
-lunch arrow_raphael-userdebug
-make bacon -j$(nproc --all)
-```
+### Passo 3: Format Data e Inicialização
+1. Vá em **Wipe > Format Data**.
+2. Digite `yes` e confirme no botão verde.
+3. Toque em **Reboot System**!
 
 ---
 
 ## 📂 Árvores e Repositórios no GitHub
 
-- 📱 [Device Tree (device/xiaomi/raphael)](https://github.com/jairorossi/android_device_xiaomi_raphael/tree/arrow-12.1)
-- ⚙️ [Common Tree (device/xiaomi/sm8150-common)](https://github.com/jairorossi/android_device_xiaomi_sm8150-common/tree/lineage-19.1)
-- 🧠 [Kernel Tree (kernel/xiaomi/sm8150)](https://github.com/jairorossi/android_kernel_xiaomi_sm8150/tree/lineage-19.1)
-- 📦 [Vendor Blobs (TheMuppets)](https://gitlab.com/the-muppets/proprietary_vendor_xiaomi_raphael)
-- 🏹 [ArrowOS Project Oficial](https://github.com/ArrowOS)
+- 📱 [Device Tree Raphael](https://github.com/jairorossi/android_device_xiaomi_raphael/tree/arrow-12.1)
+- ⚙️ [Common Tree SM8150](https://github.com/jairorossi/android_device_xiaomi_sm8150-common/tree/arrow-12.1)
+- 🧠 [Kernel Source](https://github.com/jairorossi/android_kernel_xiaomi_sm8150/tree/lineage-19.1)
+- 🏹 [ArrowOS Project](https://github.com/ArrowOS)
